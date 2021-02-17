@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+header{
+    font-family: Rajdhani;
+    font-weight: bold;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    margin-top: -110px;
+    
+}
+header nav {
+    color: white;
+    text-decoration: none;
+    animation: moverizquieda 1s ease-in;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    z-index: 5;
+}
+.topnav{
+    display: none;
+    z-index: 1;
+}
+
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+}
+header nav ul li{
+    float: left;
+    z-index: 1;
+}
+header nav ul li a{
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 1;
+}
+
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span1 {
+    left: 5%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(transparent, #f3d00a);
+    display: block;
+}
+
+#span2 {
+    top: 0;
+    left: -100%;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span2 {
+    left: 100%;
+    transition: 0.75s;
+}
+
+
+
+header nav ul li #span0{
+    margin-right: 10px;
+    z-index: 1;
+}
+header nav ul li a:hover{
+    background: linear-gradient(90deg, transparent, #f3d00a);;
+    font-size: 19px;
+    z-index: 1;
+    color: rgb(255, 221, 26);
+    box-shadow: 0 0 10px #f3d00a, 0 0 40px#f3d00a.0 0 80px #f3d00a;
+    
+    
+}
+
+
+
+
+/* ------------------------------------------ */
+
+.show-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    height: 130px;
+    width: 130px;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #f83600;
+    cursor: pointer;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2700px;
+    margin-left: -250px;
+    font-family: Rajdhani;
+    font-weight: bold;
+    
+}
+
+.show-btn:hover {
+    border: 1px solid rgb(212, 141, 7); 
+    background-color: rgb(241, 165, 24); 
+}
+
+.show-btn,
+.contain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.contain{
+    display: none;
+    background: #fff;
+    width: 410px;
+    height: 705px;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2370px;
+    font-family: Rajdhani;
+    font-weight: bold;
+}
+
+#show:checked~.contain {
+    display: block;
+}
+
+.contain .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+    
+}
+
+.contain .close-btn:hover {
+    color: #f8a35e;
+}
+
+.contain .text {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    font-family: Rajdhani;
+    font-weight: bold;
+}
+
+.contain form {
+    margin-top: 10px;
+}
+
+.contain form .data {
+    height: 45px;
+    width: 100%;
+    margin: 30px 0;
+    margin-top: -5px;
+    color: black;
+    font-size: 16px;
+}
+
+form .data label {
+    font-size: 20px;
+    color: black;
+}
+
+form .data input {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid black;
+}
+
+form .data input:focus {
+    border-color: #f8a35e;
+    border-bottom-width: 2px;
+}
+
+form .forgot-pass {
+    margin-top: -8px;
+}
+
+form .forgot-pass a {
+    color: #f8a35e;
+    text-decoration: none;
+}
+
+form .forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+form .btn {
+    margin: 30px 0;
+    margin-top: 20px;
+    height: 65px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+form .btn .inner {
+    height: 100%;
+    margin-top: 20px;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+    background: -webkit-linear-gradient(right, #f3d00a, #f83600, #f3d00a, #f83600);
+    transition: all 0.4s;
+}
+
+form .btn:hover .inner {
+    left: 0;
+    margin-top: 20px;
+}
+
+form .btn button {
+    height: 100%;
+    margin-top: 12px;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+form .signup-link {
+    text-align: center;
+}
+
+form .signup-link a {
+    color: #f8a35e;
+    text-decoration: none;
+}
+
+form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 350px) and (max-width: 600px) {
+
+    /*botones de inicio*/
+    header nav {
+        display: none;
+    }
+
+    .topnav{
+        display: block;
+        width: 100%;
+        margin-top: -10px;
+        background: saddlebrown;
+    }
+    /*boton de compra*/
+    .show-btn{
+        height: 100px;
+        width: 100px;
+        margin-top: 1325px;
+        margin-left: 70px;
+        font-size: 20px;
+    }
+    .contain{
+        display: none;
+        background: #fff;
+        width: 410px;
+        height: 705px;
+        padding: 30px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        margin-top: 1040px;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: rgba(255, 89, 0, 0.59);
+        position: relative;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    
+    /* Style navigation menu links */
+    
+    .topnav a {
+        color: rgb(255, 255, 255);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+        display: block;
+    }
+    
+    
+    /* Style the hamburger menu */
+    
+    .topnav a.icon {
+        background: rgba(250, 111, 5, 0);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    
+    /* Add a grey background color on mouse-over */
+    
+    .topnav a:hover {
+        background-color: rgba(253, 92, 5, 0.357);
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    /* Style the active link (or home/logo) */
+    
+    .active {
+        background-color: #ffffff00;
+        color: rgba(255, 255, 255, 0);
+    }
+    #span0{
+        margin-right: 10px;
+    }
+    
+}

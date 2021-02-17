@@ -1,0 +1,330 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #d09a58;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d09a58, #fe8c00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d09a58, #fe8c00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+header{
+    font-family: Rajdhani;
+    font-weight: bold;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    margin-top: 10px;
+    
+}
+header nav {
+    color: white;
+    text-decoration: none;
+    animation: moverizquieda 1s ease-in;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    z-index: 1;
+}
+.topnav{
+    display: none;
+    z-index: 1;
+}
+
+header nav #botones{
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+}
+header nav #botones li{
+    float: left;
+    z-index: 1;
+}
+header nav #botones li a{
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 1;
+}
+
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span1 {
+    left: 5%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(transparent, #f3d00a);
+    display: block;
+}
+
+#span2 {
+    top: 0;
+    left: -100%;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span2 {
+    left: 100%;
+    transition: 0.75s;
+}
+
+
+
+header nav #botones li #span0{
+    margin-right: 10px;
+    z-index: 1;
+}
+header nav #botones li a:hover{
+    background: linear-gradient(90deg, transparent, #f3d00a);;
+    font-size: 19px;
+    z-index: 1;
+    color: rgb(255, 115, 21);
+    box-shadow: 0 0 10px #f3d00a, 0 0 40px#f3d00a.0 0 80px #f3d00a;
+    
+    
+}
+
+
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.box {
+    margin-top: 15px;
+    width: 340px;
+    height: 580px;
+    background-color: rgba(245, 242, 234, 0.247);
+    border-radius: 10px;
+    box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.model {
+    height: 300px;
+    max-height: 100%;
+}
+
+.detalis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.detalis {
+    color: white;
+    text-align: center;
+}
+
+.iformacion {
+    color: #ffa4358e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.box:hover {
+    background: #fe8c00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f83600, #fe8c00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+.box:hover .iformacion {
+    color: #fdf8f4c0;
+    transition: all ease 0.5s;
+}
+.vid{
+    margin-top: 95px;
+    width: 100%; 
+    height: 700px;
+}
+
+/*--responsive for mobile phone--*/
+
+@media(min-width: 350px) and (max-width: 600px){
+    header nav {
+        display: none;
+    }
+    .topnav{
+        display: block;
+        width: 100%;
+        margin-top: -10px;
+        background: saddlebrown;
+    }
+    .vid{
+        margin-top: 66px;
+        width: 100%; 
+        height: 350px;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: rgba(242, 176, 11, 0.419);
+        position: relative;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    
+    /* Style navigation menu links */
+    
+    .topnav a {
+        color: rgb(255, 255, 255);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+        display: block;
+    }
+    
+    
+    /* Style the hamburger menu */
+    
+    .topnav a.icon {
+        background: rgba(250, 111, 5, 0);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    
+    /* Add a grey background color on mouse-over */
+    
+    .topnav a:hover {
+        background-color: rgba(253, 92, 5, 0.357);
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    /* Style the active link (or home/logo) */
+    
+    .active {
+        background-color: #ffffff00;
+        color: rgba(255, 255, 255, 0);
+    }
+    #span0{
+        margin-right: 10px;
+    }
+}
+
+@keyframes moverizquieda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1, transform translate(0);
+    }
+}
+
+@keyframes arriba {
+    0% {
+        opacity: 0;
+        transform: translatey(-100px);
+    }
+    100% {
+        opacity: 1, transform translate(0);
+    }
+}
+
+.nubes {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    animation: moverizquieda 50s ease-in;
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+p {
+    font-family: Rajdhani;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: Rajdhani;
+    font-weight: bold;
+}
+
+.uno {
+    font-size: 20px;
+    font-family: Rajdhani;
+    font-weight: bold;
+}

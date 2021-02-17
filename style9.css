@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+section {
+    position: absolute;
+    left: 0;
+
+    object-fit: cover;
+    pointer-events: none;
+}
+
+header{
+    font-family: Rajdhani;
+    font-weight: bold;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    margin-top: 10px;
+    
+}
+header nav {
+    color: white;
+    text-decoration: none;
+    animation: moverizquieda 1s ease-in;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    z-index: 1;
+}
+.topnav{
+    display: none;
+    z-index: 1;
+    color: snow;
+}
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+}
+header nav ul li{
+    float: left;
+    z-index: 1;
+}
+header nav ul li a{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 1;
+}
+
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span1 {
+    left: 5%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(transparent, #f3d00a);
+    display: block;
+}
+
+#span2 {
+    top: 0;
+    left: -100%;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span2 {
+    left: 100%;
+    transition: 0.75s;
+}
+
+
+
+header nav ul li #span0{
+    margin-right: 10px;
+    z-index: 1;
+}
+header nav ul li a:hover{
+    background: linear-gradient(90deg, transparent, #f3d00a);;
+    font-size: 22px;
+    z-index: 1;
+    color: rgb(255, 115, 21);
+    box-shadow: 0 0 10px #f3d00a, 0 0 40px#f3d00a.0 0 80px #f3d00a;
+}
+
+.nubes {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    animation: moverizquieda 8s ease-in;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+@keyframes moverizquieda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1, transform translate(0);
+    }
+}
+
+.swiper-slide {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(128, 128, 128, 0.11);
+    animation: camb 2s infinite alternate linear;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+a{
+    font-size: 120px;
+    
+}
+
+.andimal {
+    text-align: center;
+}
+
+img{
+    width: 1000px;
+}
+@media(min-width: 350px) and (max-width: 600px){
+    header nav {
+        display: none;
+    }
+    
+    .topnav{
+        display: block;
+        width: 100%;
+        background: saddlebrown;
+        margin-top: -10px;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: rgba(242, 177, 11, 0.515);
+        position: relative;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    
+    /* Style navigation menu links */
+    
+    .topnav a {
+        color: rgb(255, 255, 255);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+        display: block;
+    }
+    
+    
+    /* Style the hamburger menu */
+    
+    .topnav a.icon {
+        background: rgba(250, 111, 5, 0);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    
+    /* Add a grey background color on mouse-over */
+    
+    .topnav a:hover {
+        background-color: rgba(253, 92, 5, 0.357);
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    /* Style the active link (or home/logo) */
+    
+    .active {
+        background-color: #ffffff00;
+        color: rgba(255, 255, 255, 0);
+    }
+    #span0{
+        margin-right: 10px;
+    }
+}

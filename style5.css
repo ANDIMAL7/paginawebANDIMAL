@@ -1,0 +1,489 @@
+* {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ 
+    background-image: url("images/contac.jpg");
+   
+}
+
+header{
+    font-family: Rajdhani;
+    font-weight: bold;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    margin-top: 10px;
+    
+}
+header nav {
+    color: white;
+    text-decoration: none;
+    animation: moverizquieda 1s ease-in;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    z-index: 1;
+    margin-left: 10%;
+}
+.topnav{
+    display: none;
+    z-index: 1;
+}
+
+header nav #botones{
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+}
+header nav #botones li{
+    float: left;
+    z-index: 1;
+}
+header nav #botones li a{
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 1;
+}
+
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span1 {
+    left: 5%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(transparent, #f3d00a);
+    display: block;
+}
+
+#span2 {
+    top: 0;
+    left: -100%;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span2 {
+    left: 100%;
+    transition: 0.75s;
+}
+
+
+
+header nav #botones li #span0{
+    margin-right: 10px;
+    z-index: 1;
+}
+header nav #botones li a:hover{
+    background: linear-gradient(90deg, transparent, #f3d00a);;
+    font-size: 19px;
+    z-index: 0;
+    color: rgb(255, 115, 21);
+    box-shadow: 0 0 10px #f3d00a, 0 0 40px#f3d00a.0 0 80px #f3d00a;
+    
+    
+}
+
+
+
+.container {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #a89b865d;
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(143, 98, 2, 0.562);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur (10px);
+}
+
+.container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5s;
+}
+
+.container .card:hover .content {
+    opacity: 1;
+}
+
+.container .card .content .imgBx {
+    position: relative;
+}
+.container .card .content .imgcri {
+    position: relative;
+    height: 161px;
+    width: 158px;
+    background: url(images/cristian.png);
+}
+.container .card .content .imgcri:hover {
+    background: url(images/cristiananimado.png);  
+    transition: 0.4s;
+}
+.container .card .content .imgcat{
+    position: relative;
+    height: 161px;
+    width: 158px;
+    background: url(images/cata.png);
+}
+.container .card .content .imgcat:hover {
+    background: url(images/catalinaanimado.png);  
+    transition: 0.4s;
+}
+.container .card .content .imgmar{
+    position: relative;
+    height: 161px;
+    width: 158px;
+    background: url(images/marco.png);
+}
+.container .card .content .imgmar:hover {
+    background: url(images/marcoanimado.png);  
+    transition: 0.4s;
+}
+.container .card .content .imgjo{
+    position: relative;
+    height: 161px;
+    width: 158px;
+    background: url(images/maria.png);
+}
+.container .card .content .imgjo:hover {
+    background: url(images/mariaanimado.png);  
+    transition: 0.4s;
+}
+.container .card .content .imggar{
+    position: relative;
+    height: 161px;
+    width: 158px;
+    background: url(images/garcia.png);
+}
+.container .card .content .imggar:hover {
+    background: url(images/garciaanimado.png);  
+    transition: 0.4s;
+}
+.container .card .content .imglau{
+    position: relative;
+    height: 161px;
+    width: 158px;
+    background: url(images/laura.png);
+}
+.container .card .content .imglau:hover {
+    background: url(images/lauraanimado-01.png);  
+    transition: 0.4s;
+}
+.container .card .content .imgda{
+    position: relative;
+    height: 161px;
+    width: 158px;
+    background: url(images/bolivar.png);
+}
+.container .card .content .imgda:hover {
+    background: url(images/bolivaranimado.png);  
+    transition: 0.4s;
+}
+
+
+.container .card .container .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content .contenBx h3 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container .card .container .contenBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.container .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+
+.container .card .sci li {
+    list-style: none;
+    margin: 0.10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    transition-delay: calc (0.1s * var(--i));
+}
+
+.container.card:hover .sci li {
+    transform: translateY(40px);
+}
+
+.container .card .sci li a {
+    color: white;
+    font-size: 24px;
+}
+
+h3 {
+    color: white;
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#section1 {
+    height: 900px;
+}
+
+.todos{
+    height: 900px;
+    width: 100%;
+}
+
+.btn-neon:hover #span3 {
+    left: 5%;
+    transition: 2s;
+    transition-delay: 0.5s;
+}
+
+#span2 {
+    top: 0;
+    left: -100%;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span2 {
+    left: 100%;
+    transition: 0.75s;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    animation: moverizquieda 1s ease-in;
+}
+
+.sol2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: arriba 20s ease-in;
+    margin-left: 0;
+}
+
+.container img{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+@keyframes moverizquieda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1, transform translate(0);
+    }
+}
+
+.inetegrantes {
+    margin-top: 4%;
+    color: rgb(70, 68, 0);
+    font-size: 50px;
+    text-align: center;
+    font-family: Rajdhani;
+    font-weight: bold;
+    
+}
+.titulo {
+    margin-top: 4%;
+    color: rgb(73, 71, 0);
+    font-size: 50px;
+    text-align: center;
+    font-family: Rajdhani;
+    font-weight: bold;
+    
+}
+
+h4 {
+    text-align: center;
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    
+}
+
+.texto2{
+    text-align: center;
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(70, 68, 0);
+    
+}
+h5{
+    text-align: center;
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    margin-top: -30px;
+}
+
+@media(min-width: 350px) and (max-width: 600px){
+    header nav {
+       display: none;
+    }
+    .topnav{
+        display: block;
+        width: 100%;
+        margin-left: -8px;
+        margin-top: -10px;
+        background: rgb(148, 68, 11);
+    }
+
+    #botones{
+        margin-top: 58px;
+    }
+    #section1 {
+        height: 400px;
+    }
+    
+    .todos{
+        margin-top: 66px;
+        height: 350px;
+        width: 100%;
+    }
+    .btn-neon #span2 {
+        margin-top: 58px;
+    }
+    .btn-neon #span1 {
+        margin-top: 58px;
+    }
+    .btn-neon #span3 {
+        margin-top: 58px;
+    }
+    .btn-neon:hover #span2 {
+        margin-top: 58px;
+    }
+    .btn-neon:hover #span1 {
+        margin-top: 58px;
+    }
+    .btn-neon:hover #span3 {
+        margin-top: 58px;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: rgba(242, 177, 11, 0.59);
+        position: relative;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    
+    /* Style navigation menu links */
+    
+    .topnav a {
+        color: rgb(255, 255, 255);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+        display: block;
+    }
+    
+    
+    /* Style the hamburger menu */
+    
+    .topnav a.icon {
+        background: rgba(250, 111, 5, 0);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    
+    /* Add a grey background color on mouse-over */
+    
+    .topnav a:hover {
+        background-color: rgba(253, 92, 5, 0.357);
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    /* Style the active link (or home/logo) */
+    
+    .active {
+        background-color: #ffffff00;
+        color: rgba(255, 255, 255, 0);
+    }
+    #span0{
+        margin-right: 10px;
+    }
+}
