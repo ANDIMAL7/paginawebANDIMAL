@@ -12,10 +12,11 @@ body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #d09a58, #fe8c00);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
 }
 
 section img {
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 100%;
     height: 100%;
@@ -24,14 +25,7 @@ section img {
     
 }
 
-section img {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
+
 
 header{
     font-family: Rajdhani;
@@ -204,8 +198,30 @@ header nav #botones li a:hover{
     width: 100%; 
     height: 700px;
 }
-
-
+.imagenes{
+    width: 260px;
+    height: 430px;
+    margin-left: 20%;
+    margin-top: 5px;
+}
+.imagenes1{
+    width: 260px;
+    height: 430px;
+    margin-left: 55%;
+    margin-top: 5px;
+}
+.imagenes2{
+    width: 260px;
+    height: 430px;
+    margin-left: 20%;
+    margin-top: 440px;
+}
+.imagenes3{
+    width: 260px;
+    height: 430px;
+    margin-left: 55%;
+    margin-top: 440px;
+}
 /*--responsive for mobile phone--*/
 
 @media(min-width: 350px) and (max-width: 600px){
@@ -273,6 +289,32 @@ header nav #botones li a:hover{
     }
     #span0{
         margin-right: 10px;
+    }
+    .imagenes{
+        width: 260px;
+        height: 430px;
+        margin-left: -1%;
+        margin-top: -5px;
+      
+    }
+    .imagenes1{
+        width: 260px;
+        height: 430px;
+        margin-top: -5px;
+        margin-left: 46%;
+       
+    }
+    .imagenes2{
+        width: 260px;
+        height: 430px;
+        margin-left: -2%;
+        margin-top: 420px;
+    }
+    .imagenes3{
+        width: 260px;
+        height: 430px;
+        margin-left: 47%;
+        margin-top: 420px;
     }
 }
 
