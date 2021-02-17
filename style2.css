@@ -141,6 +141,7 @@ header nav #botones li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .box {
@@ -203,6 +204,7 @@ header nav #botones li a:hover{
     width: 100%; 
     height: 700px;
 }
+
 
 /*--responsive for mobile phone--*/
 
